@@ -1,14 +1,25 @@
 {
   "name": "vue-face-recognition",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Anastasios Fortis",
+    "email": "anastasiosfortis@gmail.com"
+  },
+  "files": ["dist"],
+  "main": "dist/vue-face-recognition.umd.js",
+  "unpkg": "dist/vue-face-recognition.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name vue-face-recognition src/main.js",
     "lint": "vue-cli-service lint"
   },
+
   "dependencies": {
     "core-js": "^3.3.2",
+    "face-api.js": "^0.21.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
